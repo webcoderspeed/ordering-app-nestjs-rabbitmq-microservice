@@ -6,13 +6,13 @@ import { CreateOrderDTO } from './dto/create-order-request';
 export class OrdersController {
   constructor(private readonly ordersService: OrdersService) {}
 
-  @Get()
-  getHello() {
-    return 'Hello';
-  }
-
   @Post()
   async createOrder(@Body() dto: CreateOrderDTO) {
     return this.ordersService.createOrder(dto);
+  }
+
+  @Get()
+  async getOrders() {
+    return this.ordersService.getOrders();
   }
 }
