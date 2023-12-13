@@ -1,2 +1,4 @@
 export const ORDER_CREATED = 'ORDER_CREATED';
 export const BILLING_SERVICE = 'BILLING';
+export const AUTH_SERVICE = 'AUTH_SERVICE';
+export const VALIDATE_USER = 'VALIDATE_USER';
